@@ -83,11 +83,9 @@
 		A95E280C16088CA6009D32D6 /* SampleAFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				A95E281516088CA6009D32D6 /* SAFNAppDelegate.h */,
-				A95E281616088CA6009D32D6 /* SAFNAppDelegate.m */,
 				A95E281E16088CA6009D32D6 /* MainStoryboard.storyboard */,
-				A95E282116088CA6009D32D6 /* SAFNViewController.h */,
-				A95E282216088CA6009D32D6 /* SAFNViewController.m */,
+				A95E282916088CFD009D32D6 /* AppDelegate */,
+				A95E282A16088D08009D32D6 /* Controllers */,
 				A95E280D16088CA6009D32D6 /* Supporting Files */,
 			);
 			path = SampleAFNetworking;
@@ -105,6 +103,24 @@
 				A95E281C16088CA6009D32D6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A95E282916088CFD009D32D6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A95E281516088CA6009D32D6 /* SAFNAppDelegate.h */,
+				A95E281616088CA6009D32D6 /* SAFNAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A95E282A16088D08009D32D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A95E282116088CA6009D32D6 /* SAFNViewController.h */,
+				A95E282216088CA6009D32D6 /* SAFNViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

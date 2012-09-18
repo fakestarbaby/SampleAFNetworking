@@ -19,6 +19,7 @@
 		A95E281D16088CA6009D32D6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A95E281C16088CA6009D32D6 /* Default-568h@2x.png */; };
 		A95E282016088CA6009D32D6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95E281E16088CA6009D32D6 /* MainStoryboard.storyboard */; };
 		A95E282316088CA6009D32D6 /* SAFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95E282216088CA6009D32D6 /* SAFNViewController.m */; };
+		A95E285F1608AADD009D32D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95E285C1608AAD1009D32D6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		A95E281F16088CA6009D32D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A95E282116088CA6009D32D6 /* SAFNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAFNViewController.h; sourceTree = "<group>"; };
 		A95E282216088CA6009D32D6 /* SAFNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAFNViewController.m; sourceTree = "<group>"; };
+		A95E285C1608AAD1009D32D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BFE3F567A02C49CE8AFAD068 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76F60916BAC47028813B866 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A95E285F1608AADD009D32D6 /* QuartzCore.framework in Frameworks */,
 				A95E280716088CA6009D32D6 /* UIKit.framework in Frameworks */,
 				A95E280916088CA6009D32D6 /* Foundation.framework in Frameworks */,
 				A95E280B16088CA6009D32D6 /* CoreGraphics.framework in Frameworks */,
@@ -78,6 +81,7 @@
 		A95E280516088CA6009D32D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A95E285C1608AAD1009D32D6 /* QuartzCore.framework */,
 				A95E280616088CA6009D32D6 /* UIKit.framework */,
 				A95E280816088CA6009D32D6 /* Foundation.framework */,
 				A95E280A16088CA6009D32D6 /* CoreGraphics.framework */,

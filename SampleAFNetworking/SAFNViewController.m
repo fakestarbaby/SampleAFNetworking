@@ -7,6 +7,7 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 #import "SAFNViewController.h"
 
@@ -20,6 +21,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [SVProgressHUD show];
+
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.post.japanpost.jp/zipcode/dl/kogaki/zip/ken_all.zip"]];
 
     NSString *directory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
@@ -28,11 +31,12 @@
     operation.outputStream = [NSOutputStream outputStreamToFileAtPath:filePath append:NO];
 
     [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
-        NSLog(@"%0.2f MB", totalBytesRead / 1024.0f / 1000.0f);
+        NSString *status = [NSString stringWithFormat:@"Now downloading\n%0.2f MB", totalBytesRead / 1024.0f / 1000.0f];
+        [SVProgressHUD setStatus:status];
     }];
 
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Success!!");
+        [SVProgressHUD dismiss];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", [error localizedDescription]);
     }];
